@@ -1,3 +1,83 @@
 body{
-    background-color: blanchedalmond;
+    background-color: rgb(215, 224, 250);
+}
+header{
+    background-color: darkblue !important;
+    border:2px solid blue;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+header img{
+padding: 20px;
+}
+nav{
+    background-color: deepskyblue;
+    border: 2px solid yellowgreen;
+    border-radius: 22px;
+}
+nav p{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+section{
+    width: 40%;
+    border: 2px solid rgb(90, 20, 255);
+    padding: 10px;
+    border-radius: 25px;
+    margin: 10px auto;
+    background: linear-gradient(blue,pink);
+}
+form{
+    background: silver;
+    width: 70%;
+    border-radius: 20px;
+    margin: 10px auto;
+    box-shadow:outset 0 0 8px rebeccapurple;
+}
+fieldset{
+    border-style: none;
+}
+label{
+    font-size: 18px;
+}
+textarea{
+    resize: both;
+    max-height: 100px;
+}
+input :focus, textarea:focus{
+    border-color: cadetblue;
+    cursor: pointer;
+    box-shadow: inset 0 0 8px cadetblue;
+    outline: 0 none;
+}
+form button{
+    width: 40%;
+    margin: 10px auto;
+    height: 40px;
+    background: radial-gradient(teal, white);
+    color: white;
+    border-radius: 15px;
+}
+form button:hover{
+    background: cornflowerblue;
+    text-decoration: underline;
+    color: blueviolet;
+    cursor: pointer;
+}
+form input{
+    height: 20px;
+    box-sizing: border-box;
+    color: black;
+    outline: none;
+    border: 2px solid black;
+}
+footer{
+    font-size: 16px;
+    text-align: center;
+    color: cornflowerblue;
 }
