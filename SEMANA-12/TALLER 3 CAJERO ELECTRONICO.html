@@ -1,0 +1,48 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAJERO</title>
+    <!-- link de sitio sweetalert mensajes más elegantes-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <style>
+        h1,h2,p{
+            font-size: 26px;
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <img src="./Img/Nubank.jpeg" alt="" width="100" height="100">
+        <h1>BANCO NUBANK</h1>
+        <h1>RETIRO DE DINERO DE CAJERO ELECTRONICO</h1>
+        <h2>Bienvendido señor usuario a su cajero electronico del Banco NUBANK</h2>
+        <br>
+        <script>
+            let sw=0;//validar fondos ok
+            let cuenta= parseInt(prompt("Ingrese numero de cuenta de ahorros"))
+            let saldo= parseInt(prompt("Ingrese saldo$$ a consignar"))
+            let valor= parseInt(prompt("Ingrese valor$$ a retirar"))
+            //PROCESO
+            if (valor>saldo){
+                swal("Estimado usuario","!! FONDOS INSUFICIENTES !!","error");
+            }else{
+                sw=1;// cambio de esatdo a 1
+                var saldof=0;
+                var saldof=saldo-valor;
+                alert("Retire su dinero....$"+valor);
+                swal("Estimado usuario","!! RETIRE SU DINERO !!","success");
+            }
+            //SALIDA DE RESULTADOS
+            if (sw==0){
+                document.write("<font color='blue' face='Comic sans ms'size='14'>"+"Saldo insuficiente..su saldo disponible es...$"+saldo+"</font>"+"<br>");
+            }else{
+                document.write("<font color='blue' face='Comic sans ms'size='14'>"+"Dinero Retirado...$"+valor+"</font>"+"<br>");
+                document.write("<font color='blue' face='Comic sans ms'size='14'>"+"Saldo disponible es...$"+saldof+"</font>"+"<br>");
+            }
+        </script>
+    </center>
+</body>
+</html>
