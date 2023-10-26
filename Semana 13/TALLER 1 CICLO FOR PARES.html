@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CICLO FOR:</title>
+    <!-- link de sitio Sweetalert mensajes más elegantes-->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <center>
+        <h1>GENERACION  DE NUMEROS PARES</h1>
+        <H2>ESCOGIDOS POR EL USUARIO</H2>
+        <br>
+        <script>
+            let inicio,final;
+            let num=0;
+            // ENTRADA 
+            inicio=parseInt(prompt("ingrese el numero inicial rango"));
+            final=parseInt(prompt("ingrese el numero final rango"));
+            // PROCESO
+            for(f=inicio;f<=final;f++){
+                // validacion del numero par
+                if (f%2==0){
+                    document.write("NUMERO PAR..."+f+"<br>");
+                    num++; // contador de pares
+                }
+                
+            }
+            // SALIDA
+    document.write("*********************************************************************"+"<br>");
+    document.write("<br>");
+    document.write("cantidad de numeros pares generados .."+num+"<br>");
+    document.write("****************************************************************************");
+        </script>
+    </center>
+</body>
+</html>
