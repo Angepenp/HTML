@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prestamos</title>
+    <script src="./JS/SIMULADOR.js"></script>
+    <link rel="stylesheet" href="./SIMULADOR.css">
+</head>
+<body>
+    <center>
+        <img src="./img/Img/nu bank.jpeg" alt="" width="150" height="150">
+        <div class="container">
+            <form class="form">
+                <h2>Simulador de prestamos</h2>
+                <label for="Nota1">Valor Credito</label>
+                <input type="text" id="ValorC" class="box">
+
+                <label for="Nota2">Números de Cuotas mensuales</label>
+                <input type="text" id="NumC" class="box">
+
+                <label for="Nota3">Tasa de Interés Mensual</label>
+                <input type="text" id="Interes" class="box">
+
+                <label for="Def">Valor Cuota a pagar</label>
+                <input type="text" id="ValorA" class="box" disabled>
+
+                <label for="Def">Valor Total Prestamo</label>
+                <input type="text" id="ValorB" class="box" disabled>
+
+                <input type="button" value="Calcular" class="submit" onclick="calcular()">
+                <input type="reset" value="Limpiar" class="submit" onclick="limpiar()">
+            </form>
+    </center>
+</body>
+</html>
