@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+    <link rel="stylesheet" href="./CSS/formulario 16.css">
+    <script src="./JS/Formulario_select.js"></script>
+</head>
+<body>
+    <br><br>
+    <h1>CALCULADORA BASICA</h1>
+    <form action="">
+        <fieldset>
+            <table>
+                <tr><th>Numero 1:</th><td><input type="text" id="n1" name="num1" size="40" max="20" placeholder="Ingrese numero 1"></td></tr>
+
+                <tr><th>Numero 2:</th><td><input type="text" id="n2" name="num2" size="40" max="20" placeholder="Ingrese numero 2"></td></tr>
+
+                <tr><th>Seleccione operacion matematica</th><td><select name="operac" id="op">
+                    <option>sumar</option>
+                    <option>restar</option>
+                    <option>multiplicar</option>
+                    <option>dividir</option>
+                </select></td></tr>
+                <tr><th><input type="button" value="CALCULAR" id="bot" onclick="liquidar()"><td><input type="reset" value="BORRAR" id="bot"></td></th></tr>
+                <tr><th>Resultado:</th><td><input type="text" id="resp" size="40"></td></tr>
+            </table>
+        </fieldset>
+    </form> 
+</body>
+</html>
