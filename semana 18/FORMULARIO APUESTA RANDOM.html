@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO APUESTAS</title>
+    <link rel="stylesheet" href="./CSS/APUESTA.css">
+    <script src="./JS/APUESTAS.js"></script>
+</head>
+<body>
+    <center>
+        <h1>APUESTAS DEL  NUMERO ALEATORIO</h1>
+        <h2>METODO MATH- RANDOM</h2>
+        <h2>ADIVINAR NUMEROS DEL 1 AL 10</h2>
+        <br><br>
+        <form action="">
+            <label for="">NUMERO APOSTADO -USUARIO</label>
+            <input type="text" id="apostado" required><br>
+            <br><br>
+            <label for="">NUMERO RANDOM - SISTEMA JS</label>
+            <input type="text" id="resultado" disabled><br>
+            <br><br>
+            <label for="">RESULTADO APUESTA</label>
+            <input type="text" id="salida" disabled><br>
+            <br><br>
+        </form>
+        <div id="boton">
+            <button onclick="apostar();">APOSTAR !!</button>
+            <button onclick="cancel();">BORRAR !!</button>
+        </div>
+    </center>
+</body>
+</html>
